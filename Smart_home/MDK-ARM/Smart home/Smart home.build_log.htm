@@ -1,0 +1,119 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 GEFEI, 1, LIC=EXJT4-FSZK5-HL0CL-0X1FP-L72GU-00R42
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.41.0.0
+Toolchain Path:  D:\Software\Keil\keil_Core\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.21.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Project\Final year project\Smart_home\MDK-ARM\Smart home.uvprojx
+Project File Date:  03/15/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Software\Keil\keil_Core\ARM\ARMCC\Bin'
+Rebuild target 'Smart home'
+assembling startup_stm32f103xb.s...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling gpio.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling tim.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling main.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_adc.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_msp.c...
+compiling adc.c...
+compiling usart.c...
+compiling system_stm32f1xx.c...
+compiling hc-sr501.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling mymq-7.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling buzzer.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_exti.c...
+compiling mydht11.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling myoled.c...
+..\MyApp\myoled.c(23): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SCL(1);
+..\MyApp\myoled.c(24): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SDA(1);
+..\MyApp\myoled.c(34): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SDA(1);
+..\MyApp\myoled.c(35): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SCL(1);
+..\MyApp\myoled.c(36): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SDA(0);
+..\MyApp\myoled.c(37): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SCL(0);
+..\MyApp\myoled.c(47): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SDA(0);
+..\MyApp\myoled.c(48): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SCL(1);
+..\MyApp\myoled.c(49): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SDA(1);
+..\MyApp\myoled.c(62): warning:  #188-D: enumerated type mixed with another type
+      OLED_W_SDA(!!(Byte & (0x80 >> i)));
+..\MyApp\myoled.c(63): warning:  #188-D: enumerated type mixed with another type
+      OLED_W_SCL(1);
+..\MyApp\myoled.c(64): warning:  #188-D: enumerated type mixed with another type
+      OLED_W_SCL(0);
+..\MyApp\myoled.c(66): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SCL(1); // 额外的一个时钟，不处理应答信号
+..\MyApp\myoled.c(67): warning:  #188-D: enumerated type mixed with another type
+    OLED_W_SCL(0);
+..\MyApp\myoled.c: 14 warnings, 0 errors
+compiling stm32f1xx_hal_tim.c...
+linking...
+Program Size: Code=15604 RO-data=1996 RW-data=40 ZI-data=1216  
+FromELF: creating hex file...
+"Smart home\Smart home.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil::STM32F1xx_DFP@2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Smart_home
+  D:/Software/Keil/keil_Core/PACK/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  D:/Software/Keil/keil_Core/PACK/Keil/STM32F1xx_DFP/2.2.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
