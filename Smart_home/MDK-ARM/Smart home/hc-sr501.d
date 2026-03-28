@@ -33,3 +33,4 @@ smart home\hc-sr501.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 smart home\hc-sr501.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 smart home\hc-sr501.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 smart home\hc-sr501.o: ../Core/Inc/usart.h
+smart home\hc-sr501.o: ..\MyApp\myoled.h

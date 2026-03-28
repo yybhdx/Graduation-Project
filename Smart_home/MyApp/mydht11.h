@@ -35,6 +35,9 @@
 extern TIM_HandleTypeDef htim1;
 extern UART_HandleTypeDef huart1;
 
+extern uint8_t humi;
+extern uint8_t temp;
+
 
 // 微秒级延时函数，用于精确控制信号时序
 void Delay_us(uint16_t us);

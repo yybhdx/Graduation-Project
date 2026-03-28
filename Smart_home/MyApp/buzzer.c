@@ -17,13 +17,14 @@ void Buzzer_Off()
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET);
 }
 
-
 void Buzzer_Task()
 {
-	 if(buzzer_bit1 == 0 && buzzer_bit1 == 0)
+	// 蜂鸣器不响
+	 if(buzzer_bit1 == 0 && buzzer_bit2 == 0)
 	 {
 		 Buzzer_Off();
 	 }
+	 // 出现一种状况：检测到人或一氧化碳浓度值超标，蜂鸣器就响
 	 else
 	 {
 		 Buzzer_On();

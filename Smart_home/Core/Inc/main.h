@@ -57,6 +57,16 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define HS_SR501_Pin GPIO_PIN_0
+#define HS_SR501_GPIO_Port GPIOA
+#define Buzzr_Pin GPIO_PIN_12
+#define Buzzr_GPIO_Port GPIOB
+#define DHT11_Pin GPIO_PIN_8
+#define DHT11_GPIO_Port GPIOA
+#define OLED_SCL_Pin GPIO_PIN_8
+#define OLED_SCL_GPIO_Port GPIOB
+#define OLED_SDA_Pin GPIO_PIN_9
+#define OLED_SDA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
