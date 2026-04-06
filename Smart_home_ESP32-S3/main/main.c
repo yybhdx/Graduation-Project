@@ -54,7 +54,7 @@ void i2s_driver_init(void)
     i2s_chan_config_t tx_chan_cfg = I2S_CHANNEL_DEFAULT_CONFIG(I2S_NUM_0, I2S_ROLE_MASTER);
     i2s_new_channel(&tx_chan_cfg, &tx_handle, NULL);
     i2s_std_config_t tx_std_cfg = {
-        .clk_cfg = I2S_STD_CLK_DEFAULT_CONFIG(16000), 
+        .clk_cfg = I2S_STD_CLK_DEFAULT_CONFIG(44100), 
         .slot_cfg = I2S_STD_PHILIPS_SLOT_DEFAULT_CONFIG(I2S_DATA_BIT_WIDTH_16BIT, I2S_SLOT_MODE_MONO),
         .gpio_cfg = {.mclk = I2S_GPIO_UNUSED, .bclk = SPK_I2S_BCLK, .ws = SPK_I2S_LRC, .dout = SPK_I2S_DIN, .din = I2S_GPIO_UNUSED}
     };
@@ -102,7 +102,7 @@ void audio_loopback_task(void *args)
                 // temp = temp << 0; // 不处理
 
                 // 2. 映射到 16 位：右移 14 位（保留一点动态余量防止爆音）
-                write_buf[i] = (int16_t)(temp >> 18);
+                write_buf[i] = (int16_t)(temp >> 16);
             }
             // 写入输出
             i2s_channel_write(tx_handle, write_buf, samples * sizeof(int16_t), &bytes_written, portMAX_DELAY);
