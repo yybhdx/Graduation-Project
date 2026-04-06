@@ -46,8 +46,8 @@ void esp_report(void)
     // 人员检测字符串
     sprintf(people_str, hc_sr501_value ? "有人" : "无人");
 
-    // CO浓度警告字符串 (ppm > 50 认为超标)
-    sprintf(warning_str, (ppm > 50.0f) ? "超标" : "正常");
+    // CO浓度警告字符串 (ADC > 2000 认为超标)
+    sprintf(warning_str, (mq7_adc_value > 2000) ? "超标" : "正常");
 
     // 蜂鸣器状态
     beep_status = (buzzer_bit1 || buzzer_bit2) ? 1 : 0;

@@ -37,13 +37,22 @@ void mq7_task(void)
 
   ppm = pow(11.5428 * R0 / RS, 0.6549f);
   
-  if( (mq7_adc_value < 4000) &&  (ppm < 2000))
+//  if( (mq7_adc_value < 4000) &&  (ppm < 2000))
+//  {
+//	buzzer_bit1 = 0;
+//  }
+//  else
+// {
+//	buzzer_bit1 = 1;
+//  }
+ 
+   if( (mq7_adc_value >= 2000))
   {
-	buzzer_bit1 = 0;
+	buzzer_bit1 = 1;
   }
   else
  {
-	buzzer_bit1 = 1;
+	buzzer_bit1 = 0;
   }
 
   /*¥Ú”°ppm÷µ*/
